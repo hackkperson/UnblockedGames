@@ -3,6 +3,16 @@ import { Game, Category } from './types';
 
 export const GAMES_DATA: Game[] = [
   {
+    id: 'cyber-snake',
+    title: 'Cyber Snake',
+    description: 'High-speed cyberpunk serpent simulation. Breach the Neo-Tokyo mainframe by consuming corrupted data nodes.',
+    thumbnail: 'https://i.ibb.co/GfWFcTvF/cyber.jpg',
+    iframeUrl: '#',
+    category: Category.ARCADE,
+    tags: ['Original', 'Cyberpunk', 'Skill'],
+    isHot: true
+  },
+  {
     id: 'basket-hoop',
     title: 'Basket Hoop',
     description: 'Test your aim and score as many hoops as possible in this addictive basketball challenge.',
@@ -10,6 +20,6 @@ export const GAMES_DATA: Game[] = [
     iframeUrl: 'https://d11jzht7mj96rr.cloudfront.net/games/2024/construct/311/basket-hoop/index-gg.html',
     category: Category.SPORTS,
     tags: ['Basketball', 'Sports', 'Skill'],
-    isHot: true
+    isHot: false
   }
 ];

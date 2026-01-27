@@ -3,13 +3,13 @@ import { Category } from './types.js';
 
 export const GAMES_DATA = [
   {
-    id: 'neon-serpent',
-    title: 'Neon Serpent',
-    description: 'High-speed Anime-style snake action. Consume data nodes and reach maximum length. SUGOI!',
-    thumbnail: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=400&h=300&auto=format&fit=crop',
+    id: 'cyber-snake',
+    title: 'Cyber Snake',
+    description: 'High-speed cyberpunk serpent simulation. Breach the Neo-Tokyo mainframe by consuming corrupted data nodes.',
+    thumbnail: 'https://i.ibb.co/GfWFcTvF/cyber.jpg',
     iframeUrl: '#', // Not used for this native component
     category: Category.ARCADE,
-    tags: ['Original', 'Anime', 'Skill'],
+    tags: ['Original', 'Cyberpunk', 'Skill'],
     isHot: true
   },
   {

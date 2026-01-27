@@ -18,7 +18,7 @@ const GameModal = ({ game, onClose }) => {
 
   // Determine content: Iframe or Native Component
   const renderGameContent = () => {
-    if (game.id === 'neon-serpent') {
+    if (game.id === 'cyber-snake') {
       return html`<${SnakeGame} />`;
     }
     return html`
@@ -43,7 +43,7 @@ const GameModal = ({ game, onClose }) => {
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
             </button>
-            <h2 className="cyber-font text-sm font-bold text-white uppercase tracking-widest">${game.title} <span className="text-fuchsia-700 ml-2 text-[10px]">// ${game.id === 'neon-serpent' ? 'LOCAL_NODE' : 'REMOTE_LINK'}</span></h2>
+            <h2 className="cyber-font text-sm font-bold text-white uppercase tracking-widest">${game.title} <span className="text-fuchsia-700 ml-2 text-[10px]">// ${game.id === 'cyber-snake' ? 'SYSTEM_OVERRIDE' : 'REMOTE_LINK'}</span></h2>
           </div>
           
           <div className="flex items-center gap-3">
@@ -77,7 +77,7 @@ const GameModal = ({ game, onClose }) => {
                   <p className="text-[10px] text-fuchsia-200/40 cyber-font uppercase tracking-tight">${game.description}</p>
                </div>
                <div className="cyber-font text-[8px] text-cyan-900 animate-pulse">
-                  ${game.id === 'neon-serpent' ? 'LOCAL_EXECUTABLE' : 'PROXY_LOAD: 0.04ms'}
+                  ${game.id === 'cyber-snake' ? 'LOCAL_EXECUTABLE' : 'PROXY_LOAD: 0.04ms'}
                </div>
             </div>
           </div>
