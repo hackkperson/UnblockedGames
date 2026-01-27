@@ -103,7 +103,7 @@ const App = () => {
         <div className="max-w-7xl mx-auto">
           
           {/* Featured Section */}
-          {!searchQuery && selectedCategory === Category.ALL && (
+          {!searchQuery && selectedCategory === Category.ALL && hotGames.length > 0 && (
             <section className="mb-16">
               <div className="flex items-center justify-between mb-8">
                 <h2 className="text-2xl font-bold text-white flex items-center gap-2">
@@ -141,7 +141,7 @@ const App = () => {
                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">No games found</h3>
-                <p className="text-slate-500">Try adjusting your search or category filters.</p>
+                <p className="text-slate-500">The arcade is currently empty. Check back later!</p>
                 <button 
                   onClick={() => {setSearchQuery(''); setSelectedCategory(Category.ALL);}}
                   className="mt-6 text-cyan-400 hover:text-cyan-300 font-semibold"
